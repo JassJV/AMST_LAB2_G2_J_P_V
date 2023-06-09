@@ -41,12 +41,32 @@
             android:text="correo"
             android:textSize="18sp" />
 
-        <Button
-            android:id="@+id/btn_logout"
+        <EditText
+            android:id="@+id/txt_tweet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="cerrarSesion"
-            android:text="Cerrar Sesion" />
+            android:hint="Ingresa tu tweet aquí"
+            android:layout_margin="16dp"
+            android:maxLines="3"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="end"/>
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="cerrarSesion"
+        android:text="Cerrar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
