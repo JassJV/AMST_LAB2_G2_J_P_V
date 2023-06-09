@@ -42,7 +42,7 @@ public class PerfilUsuario extends AppCompatActivity {
         finish();
         Intent intent = new Intent(this, MainActivity.class);
         intent.putExtra("msg", "cerrarSesion");
-        startActivity(intent);
+        startActivity(intent); //h
     }
 
 }
