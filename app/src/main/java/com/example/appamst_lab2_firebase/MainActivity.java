@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
             info_user.put("user_photo", String.valueOf(user.getPhotoUrl()));
             info_user.put("user_id", user.getUid());
             info_user.put("user_phone", user.getPhoneNumber());
+            info_user.put("user_prov", user.getProviderId());
             finish();
             Intent intent = new Intent(this, PerfilUsuario.class);
             intent.putExtra("info_user", info_user);
